@@ -11,6 +11,8 @@ public class MovimientoNave : MonoBehaviour
     public float velocidadRotacionVerticalNave = 50f;
     public float velocidadRotacionHorizontalNave = 50f;
     public float velocidadRotacionDiagonalNave = 10f;
+    public float rotacionZNormal = 0;
+    public bool estaRotando = false;
 
     void Update()
     {
@@ -42,11 +44,5 @@ public class MovimientoNave : MonoBehaviour
         {
             velocidadNave = velocidadNave + velocidadFreno;
         }
-
-        if (Input.GetButtonUp("Horizontal"))
-        {
-            transform.Rotate(0, 0, 0, Space.Self);
-        }
-
     }
 }
