@@ -14,6 +14,11 @@ public class MovimientoNave : MonoBehaviour
     public float rotacionZNormal = 0;
     public bool estaRotando = false;
 
+    public void Start()
+    {
+        gameObject.GetComponent<BoxCollider>();
+    }
+
     void Update()
     {
         // Movimiento y rotación de la nave.

@@ -38,8 +38,9 @@ public class MovimientoEnemigo : MonoBehaviour
                 numeroPuntoRuta = 0;
                 gameObject.transform.position = puntosRuta[numeroPuntoRuta].transform.position;
             }
-            Vector3 posicionPuntoRuta = puntoRutaActual.position - transform.position;
-            gameObject.transform.rotation = Quaternion.LookRotation(-posicionPuntoRuta);
+            
+            Vector3 posicionPuntoRutaActual = puntoRutaActual.position - transform.position;
+            gameObject.transform.rotation = Quaternion.LookRotation(-posicionPuntoRutaActual);
 
         }
     }
