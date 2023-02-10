@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8446869500355142510}
   m_Layer: 0
   m_Name: Proyectil_Prefab
-  m_TagString: Untagged
+  m_TagString: projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +77,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direccion: {x: 0, y: 0, z: 0}
+  rotacion: {x: 0, y: 0, z: 0}
   velocidadProyectil: 50
   duracionProyectil: 0
 --- !u!1001 &4753138494123557358
